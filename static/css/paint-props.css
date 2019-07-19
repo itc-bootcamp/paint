@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+.user {
+    background: lightgray;
+    padding: 10px;
+    color: darkslategray;
+}
+
+.content {
+    padding: 15px 10px;
+    position: relative;
+    background: #f1efef;
+    color: dimgray;
+}
+
+.box {
+    display: inline-block;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    border: solid 1px transparent;
+    border-radius: 50%;
+}
+
+.menu {
+    /* max-height: 45px; */
+}
+
+.menu span {
+    font-family: sans-serif;
+    margin-right: 8px;
+}
+
+
+.menu .menu-btn {
+    padding: 0 7px;
+    font-weight: bolder;
+    font-family: fantasy;
+    font-size: 18px;
+
+    padding: 3px 5px 3px 5px;
+    margin: 0 0 0 9px;
+    border-radius: 3px;
+    background: transparent;
+    box-shadow: 0px 1px 1px 1px lightgrey;
+    cursor: pointer;
+
+}
+
+.tile {
+    height: 200px;
+    display: inline-block;
+    width: 4px;
+    height: 4px; 
+    position: absolute;
+    pointer-events: none;
+}
+
+.board {
+    height: 70vh;
+    width: 478px;
+    margin-left: 10px;
+    border: #ededed solid 2px;
+    position: relative;
+    background: white;
+}
+
+.selected {
+    box-shadow: 0px 0px 4px 1px dimgrey;
+}
+
+.green {
+    background: lightgreen;
+}
+
+.blue {
+    background: lightskyblue;
+}
+
+.pink {
+    background: lightpink;
+}
+
+.purple {
+    background: plum;
+}
+
+.paint-item {
+    /* display: inline-block; */
+}
+
+.paint-item span {
+    width: 60px;
+    border-bottom: 1px solid lightgray;
+    display: inline-block;
+}
+
+.paint-item button {
+    font-size: 7px;
+    padding: 0px 2px 1px 2px;
+    border: 0;
+    margin-left: 7px;
+    border-radius: 3px;
+    background: transparent;
+    box-shadow: 0px 1px 1px 1px lightgrey;
+}
+
+.paint-list {
+    padding: 10px 15px;
+}
+
+.loaded {
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    z-index: 2;
+    background: #f1efef;
+}
+
+.loaded .menu-btn {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.menu-btn:active {
+    background: #dddbd7;
+}
+
+form input {
+    margin: 0 10px;
+}
+
+form {
+    margin: 0;
+}
