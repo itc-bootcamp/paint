@@ -17,11 +17,6 @@ connection = pymysql.connect(
 view = functools.partial(jinja2_view, template_lookup=['./'])
 
 
-@route('static/css/paint-props.css')
-def css():
-    return static_file("style.css",  root='css')
-
-
 @route('/static/css/<filename:re:.*\.css>')
 def getCss(filename):
     return static_file(filename,  root='static/css')
@@ -35,11 +30,6 @@ def javascripts(filename):
 @get('/static/lib/<filename:re:.*\.js>')
 def lib(filename):
    return static_file(filename, root='static/lib')
-
-
-@get('/static/images/<filename:re:.*\.(jpg|png|gif|ico)>')
-def images(filename):
-   return static_file(filename, root='images')
 
 
 @get('/')
